@@ -21,7 +21,7 @@ c = (np.sum(Y) - a * np.sum(X ** 2) - b * np.sum(X)) / n
 coef = np.polyfit(X, Y, 2)
 modelo = np.poly1d(coef)
 
-X_pred = np.linspace(0, 400, 1000)
+X_pred = np.linspace(0, 3000, 100)
 Y_pred = modelo(X_pred)
 
 #mse
